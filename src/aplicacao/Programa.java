@@ -2,20 +2,20 @@ package aplicacao;
 
 import java.util.Scanner;
 
-import servicos.PrintServico;
+import servicos.PrintServicoString;
 
 public class Programa {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		PrintServico ps = new PrintServico();
+		PrintServicoString ps = new PrintServicoString();
 		
-		System.out.print("How many values? ");
+		System.out.print("quantos valores vai digitar? ");
 		int n = sc.nextInt();
 		
 		for (int i = 0; i < n; i++) {
-			int valor = sc.nextInt();
+			String valor = sc.next();
 			ps.addValor(valor);
 		}
 

@@ -1,18 +1,19 @@
 package servicos;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
-public class PrintServico {
+public class PrintServicoString {
 	
-	List<Integer> list = new ArrayList<>();
+	List<String> list = new ArrayList<>();
 	
-	public void addValor(Integer valor) {
+	public void addValor(String valor) {
 		list.add(valor);
 		
 	}
 	//primeiro elemento PrintServico
-	public Integer first() {
+	public String first() {
 		if(list.isEmpty()) {
 			throw new IllegalStateException("lista é vazia");
 		}
