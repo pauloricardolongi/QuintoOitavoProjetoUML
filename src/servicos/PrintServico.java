@@ -5,14 +5,14 @@ import java.util.List;
 
 public class PrintServico {
 	
-	List<Integer> list = new ArrayList<>();
+	List<Object> list = new ArrayList<>();
 	
-	public void addValor(Integer valor) {
+	public void addValor(Object  valor) {
 		list.add(valor);
 		
 	}
 	//primeiro elemento PrintServico
-	public Integer first() {
+	public Object first() {
 		if(list.isEmpty()) {
 			throw new IllegalStateException("lista é vazia");
 		}
