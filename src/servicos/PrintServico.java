@@ -3,16 +3,16 @@ package servicos;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PrintServico {
+public class PrintServico<T> {
 	
-	List<Object> list = new ArrayList<>();
+	List<T> list = new ArrayList<>();
 	
-	public void addValor(Object  valor) {
+	public void addValor(T valor) {
 		list.add(valor);
 		
 	}
-	//primeiro elemento PrintServico
-	public Object first() {
+	// retorna o primeiro elemento PrintServico
+	public T first() {
 		if(list.isEmpty()) {
 			throw new IllegalStateException("lista é vazia");
 		}
